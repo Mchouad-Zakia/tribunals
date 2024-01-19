@@ -54,7 +54,7 @@ class SouscategoriesController extends Controller
         $data=souscategories::find($request->id);
         if($data){
             $data->delete();
-            return redirect()->route('sous_categories.index')->with('status',"la supprition effecter avec succe");;
+            return redirect()->route('sous_categories.index')->with('status',"la supprition effecter avec succe");
         }
     }
 }
