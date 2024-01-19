@@ -1,0 +1,22 @@
+#header {
+    display: flex;
+    align-items: center;
+}
+#logo img {
+    width: 60px;
+    height: 60px;
+}
+.sidebar-brand-text {
+    color: aliceblue;
+    font-size: 15px;
+    margin-left: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#accordionSidebar{
+    background-color: rgb(65, 158, 141);
+}
+#search{
+    background-color: rgb(65, 158, 141);
+
+}
