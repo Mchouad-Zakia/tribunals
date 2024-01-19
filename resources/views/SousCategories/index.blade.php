@@ -22,7 +22,11 @@
 
 <div class="card-header py-3 d-flex justify-content-between align-items-center">
     <h2 class="m-0 font-weight-bold text-primary">Liste sous_Catégories</h2>
-    <a href="{{ route('sous_categories.create') }}" class="btn btn-primary ml-2"><i class="fa fa-plus"></i>Ajouter sous_Catégories</a>
+
+    <div class="d-flex align-items-center">
+        <input type="text" id="searchInput" class="form-control mr-2" placeholder="Rechercher">
+        <a href="{{ route('sous_categories.create') }}" class="btn btn-primary ml-2"><i class="fa fa-plus"></i>Ajouter sous_Catégories</a>
+    </div>
 </div>
 
     <div class="card-body">
@@ -39,7 +43,7 @@
                 </thead>
                 <tbody >
                  @foreach ($data as $item )
-                   <tr class="text-center">
+                   <tr class="text-center searchable-element">
                     <td>{{$item->name}}</td>
                     <td>{{$item->description}}</td>
                     <td>{{$item->category->name}}</td>
