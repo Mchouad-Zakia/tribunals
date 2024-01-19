@@ -9,6 +9,9 @@
     font-size:large;
     text-transform: capitalize;
 }
+h2{
+   color: #044235;
+}
 
 /* Style alternating rows */
 #dataTable tbody tr:nth-child(even) {
@@ -73,5 +76,11 @@ th .sorting{
 }
 #RECHERCHE{
     margin-right: 50%;
-    
+
+}
+#search{
+    padding: 8px;
+}
+#ajouter{
+    margin-left: 100% !important;
 }
