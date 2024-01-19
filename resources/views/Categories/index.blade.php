@@ -54,34 +54,4 @@
             </div>
         </div>
     </div>
-
-
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
-
-<script>
-    function searchElements(query) {
-    // Convertit la requête en minuscules pour ignorer la casse
-    query = query.toLowerCase();
-
-    // Parcours tous les éléments à rechercher
-    $('.searchable-element').each(function() {
-      var text = $(this).text().toLowerCase();
-
-      // Si le texte de l'élément contient la requête, affiche l'élément
-      if (text.indexOf(query) !== -1) {
-        $(this).show();
-      } else {
-        $(this).hide();
-      }
-    });
-  }
-
-      $('#searchInput').on('input', function() {
-    var query = $(this).val();
-    searchElements(query);
-  });
-
-</script>
 @endsection
