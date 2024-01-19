@@ -1,0 +1,77 @@
+/* Add this CSS to your existing stylesheet or create a new one */
+
+/* Style the table header */
+#dataTable thead th {
+    background-color:  #044235;
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:bold;
+    font-size:large;
+    text-transform: capitalize;
+}
+
+/* Style alternating rows */
+#dataTable tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* Hover effect on rows */
+#dataTable tbody tr:hover {
+    background-color: #a5dfd2;
+}
+
+/* Style the action buttons */
+#dataTable tbody .btn {
+    margin: 2px;
+}
+
+/* Optional: Style the search input */
+#searchInput {
+    width: 200px;
+}
+
+/* Optional: Style the alert box */
+.auto-close-alert {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 300px;
+    z-index: 1000;
+}
+/* Add this CSS to your existing stylesheet or create a new one */
+
+/* Center content in table cells */
+#dataTable td, #dataTable th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Optional: Center text in action buttons */
+#dataTable tbody .btn i {
+    line-height: 2;
+}
+/* Add this CSS to your existing stylesheet or create a new one */
+
+/* Style the table rows */
+#dataTable tbody tr {
+    border-bottom: 2px solid #0f0f0f; /* Add a bottom border to each row */
+}
+#dataTable tbody tr:last-child {
+    border-bottom: none;
+}
+
+#dataTable tbody tr td {
+    padding: 10px;
+}
+th .sorting{
+    margin-right: 80% !important;
+}
+#searchInput
+{
+    margin-top: 18px;
+    margin-left: 20px;
+}
+#RECHERCHE{
+    margin-right: 50%;
+    
+}
