@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CategoriesController;
+use App\Http\Controllers\FournisseursController;
 use App\Http\Controllers\SousCategoriesController;
 use App\Http\Controllers\TribunalsController;
 use App\Http\Controllers\UtilisateursController;
@@ -65,5 +66,14 @@ Route::group([ "prefix"=>'tribunal',"as"=>'tribunal.'],function(){
     Route::get('/edit/{id}',[TribunalsController::class,'edit'])->name('edit');
     Route::post('/update',[TribunalsController::class,'update'])->name('update');
     Route::get('/destroy/{id}',[TribunalsController::class,'destroy'])->name('destroy');
+});
+// route des fournisseurs
+Route::group([ "prefix"=>'Fournisseurs',"as"=>'Fournisseurs.'],function(){
+    Route::get('/',[FournisseursController ::class,'index'])->name('index');
+    Route::get('/create',[FournisseursController::class,'create'])->name('create');
+    Route::post('/store',[FournisseursController::class,'store'])->name('store');
+    Route::get('/edit/{id}',[FournisseursController::class,'edit'])->name('edit');
+    Route::post('/update',[FournisseursController::class,'update'])->name('update');
+    Route::get('/destroy/{id}',[FournisseursController::class,'destroy'])->name('destroy');
 });
 

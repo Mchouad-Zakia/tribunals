@@ -39,8 +39,8 @@
         <i class="fa fa-hand-holding-usd" aria-hidden="true"></i>
         <span>Achat</span></a>
 </li><hr class="sidebar-divider my-0">
-<li class="nav-item">
-    <a class="nav-link" href="charts.html">
+<li class="nav-item {{ request()->routeIs('Fournisseurs.index') ? 'active' : '' }}">
+    <a class="nav-link"  href="{{route("Fournisseurs.index")}}">
         <i class="fa fa-male" aria-hidden="true"></i>
         <span>Fournisseur</span></a>
 </li><hr class="sidebar-divider my-0">
