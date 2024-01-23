@@ -12,9 +12,19 @@
     <link href="{{ asset('css/sb-admin-2.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/sidebar.css') }}" rel="stylesheet">
     <link href="{{ asset('css/sb-admin-2.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
+    <link href="{{ asset('css/datatable.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/form.css') }}" rel="stylesheet">
+
+
+
 
 </head>
 <body id="page-top">
+    <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
+    <!-- Include other scripts as needed -->
+
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
     <div id="wrapper">
         <!-- Sidebar -->
         @include('include.Sidebar')
@@ -54,6 +64,46 @@
     <!-- Page level custom scripts -->
     <script src="{{ asset('js/demo/chart-area-demo.js') }}"></script>
     <script src="{{ asset('js/demo/chart-pie-demo.js') }}"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+
+<script>
+    $(document).ready(function() {
+    
+
+        // Initialiser le DataTable
+        $('#dataTable').DataTable({
+            language: {
+                url: '//cdn.datatables.net/plug-ins/1.13.7/i18n/fr-FR.json',
+            },
+        });
+    });
+</script>
+
+<script>
+    function searchElements(query) {
+    // Convertit la requête en minuscules pour ignorer la casse
+    query = query.toLowerCase();
+
+    // Parcours tous les éléments à rechercher
+    $('.searchable-element').each(function() {
+      var text = $(this).text().toLowerCase();
+
+      // Si le texte de l'élément contient la requête, affiche l'élément
+      if (text.indexOf(query) !== -1) {
+        $(this).show();
+      } else {
+        $(this).hide();
+      }
+    });
+  }
+
+      $('#searchInput').on('input', function() {
+    var query = $(this).val();
+    searchElements(query);
+  });
+
+</script>
 </body>
 
 </html>

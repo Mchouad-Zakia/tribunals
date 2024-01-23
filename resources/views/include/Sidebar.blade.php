@@ -1,6 +1,6 @@
 <ul class="navbar-nav bg-info-emphasis sidebar sidebar-dark accordion" id="accordionSidebar">
     <div id="header" >
-        <div id="logo"><img class="rounded-circle" src="img/logo.png" alt=""></div>
+        <div id="logo"><img class="rounded-circle" src="{{asset("img/logo.png")}}" alt=""></div>
         <div class="sidebar-brand-text mx-3">Gestion du Stock</div>
     </div>
 
@@ -8,8 +8,8 @@
 <hr class="sidebar-divider my-0">
 
 <!-- Nav Item - Dashboard -->
-<li class="nav-item {{ request()->routeIs('home') ? 'active' : '' }}">
-    <a class="nav-link" href="{{route('home')}}">
+<li class="nav-item {{ request()->routeIs('dashboard.index') ? 'active' : '' }}">
+    <a class="nav-link" href="{{route('dashboard.index')}}">
         <i class="fas fa-fw fa-tachometer-alt"></i>
         <span>Dashboard</span></a>
 </li>
@@ -24,18 +24,18 @@
         <i class="fa fa-clone" aria-hidden="true"></i>
         <span>Sous-Catégories</span></a>
 </li><hr class="sidebar-divider my-0">
-<li class="nav-item">
-    <a class="nav-link" href="charts.html">
+<li class="nav-item {{ request()->routeIs('produits.index') ? 'active' : '' }}">
+    <a class="nav-link" href="{{route('produits.index')}}">
         <i class="fa fa-tasks" aria-hidden="true"></i>
         <span>Produit</span></a>
 </li><hr class="sidebar-divider my-0">
-<li class="nav-item">
-    <a class="nav-link" href="charts.html">
+<li class="nav-item {{ request()->routeIs('Stock.index') ? 'active' : '' }}">
+    <a class="nav-link"  href="{{route('Stock.index')}}">
         <i class="fa fa-archive" aria-hidden="true"></i>
         <span>Stock</span></a>
 </li><hr class="sidebar-divider my-0">
-<li class="nav-item">
-    <a class="nav-link" href="charts.html">
+<li class="nav-item {{ request()->routeIs('Achat.index') ? 'active' : '' }}">
+    <a class="nav-link"  href="{{route('Achat.index')}}">
         <i class="fa fa-hand-holding-usd" aria-hidden="true"></i>
         <span>Achat</span></a>
 </li><hr class="sidebar-divider my-0">
@@ -43,13 +43,17 @@
     <a class="nav-link"  href="{{route("Fournisseurs.index")}}">
         <i class="fa fa-male" aria-hidden="true"></i>
         <span>Fournisseur</span></a>
+
+
 </li><hr class="sidebar-divider my-0">
-<li class="nav-item">
-    <a class="nav-link" href="charts.html">
+<li class="nav-item  {{ request()->routeIs('Decharges.index') ? 'active' : '' }}">
+    <a class="nav-link" href="{{route('Decharges.index')}}">
         <i class="fa fa-truck" aria-hidden="true"></i>
         <span>Décharge</span></a>
+
+
 </li><hr class="sidebar-divider my-0">
-<li class="nav-item {{ request()->routeIs('tribunal.index') ? 'active' : '' }}">
+<li class="nav-item  {{ request()->routeIs('tribunal.index') ? 'active' : '' }}">
     <a class="nav-link" href="{{route('tribunal.index')}}">
         <i class="fa fa-balance-scale" aria-hidden="true"></i>
         <span>Tribunal</span></a>

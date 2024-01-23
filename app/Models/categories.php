@@ -13,4 +13,8 @@ class categories extends Model
         'description',
 
     ];
+    public function sous_categories()
+    {
+        return $this->hasMany(souscategories::class, 'categories_id');
+    }
 }

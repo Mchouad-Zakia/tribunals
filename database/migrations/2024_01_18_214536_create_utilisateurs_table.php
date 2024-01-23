@@ -15,6 +15,10 @@ return new class extends Migration
             $table->id();
             $table->string('email')->unique();
             $table->string('password',255);
+            $table->string('nom');
+            $table->string('prenom');
+            $table->boolean('superadmin')->default(0);
+
             $table->timestamps();
         });
     }

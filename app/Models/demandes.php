@@ -11,6 +11,8 @@ class demandes extends Model
     protected $fillable=[
         'tribunals_id',
         'qtD',
+        'mois_demande',
+        'nom_demande',
         'description',
     ];
 }

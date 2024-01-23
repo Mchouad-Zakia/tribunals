@@ -15,6 +15,8 @@ return new class extends Migration
             $table->id();
             $table->foreignId('tribunals_id')->constrained()->cascadeOnDelete()->cascadeOnUpdate();
             $table->integer('qtD');
+            $table->date('mois_demande');
+            $table->string('nom_demande');
             $table->text('description');
             $table->timestamps();
         });

@@ -17,4 +17,7 @@ class produits extends Model
         'nbr_maintenance',
         'description',
     ];
+    public function stock(){
+        return $this->belongsTo(stockes::class,'stockes_id');
+    }
 }

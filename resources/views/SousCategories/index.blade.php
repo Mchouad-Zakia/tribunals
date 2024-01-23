@@ -1,6 +1,7 @@
 @extends('include.layoute')
 @section('title','sous_categories')
 @section('content')
+@include("include.confirmDeleteModal")
 <div class="container-fluid">
 
 
@@ -21,8 +22,10 @@
 
 
 <div class="card-header py-3 d-flex justify-content-between align-items-center">
-    <h2 class="m-0 font-weight-bold text-primary">Liste sous_Catégories</h2>
-    <a href="{{ route('sous_categories.create') }}" class="btn btn-primary ml-2"><i class="fa fa-plus"></i>Ajouter sous_Catégories</a>
+   <div><h2  class="m-0 font-weight-bold">Liste sous_Catégories</h2></div>
+     <div>
+       <a href="{{ route('sous_categories.create') }}" id="ajouter" class="btn"><i class="fa fa-plus"></i></a>
+</div>
 </div>
 
 
@@ -43,9 +46,9 @@
                    <tr class="text-center searchable-element">
                     <td>{{$item->name}}</td>
                     <td>{{$item->description}}</td>
-                    <td>{{$item->category->name}}</td>
+                    <td>{{$item->category->name}}</td>stock
                     <td><a href="{{route('sous_categories.edit',$item->id)}}" class="btn text-warning"><i class='fas fa-pencil-alt'></i></a>
-                        <a href="{{route('sous_categories.destroy',$item->id)}}" class="btn  text-danger" onclick="return confirm('Voulez-vous supprimer ?')"><i class="fa fa-trash" aria-hidden="true" ></i></a></td>
+                        <a href="#" class="btn delete-btn " data-toggle="modal" data-target="#confirmDeleteModal" data-id="{{ $item->id }}" class="btn  text-danger" ><i class="fa fa-trash" aria-hidden="true" ></i></a></td>
                    </tr>
 
                    @endforeach
@@ -56,5 +59,38 @@
     </div>
 </div>
 </div>
+<script>
+    $(document).ready(function() {
+       var deleteId;
+
+       // Gérer l'événement d'ouverture de la boîte de dialogue modale
+       $('.delete-btn').on('click', function() {
+           deleteId = $(this).data('id');
+           console.log(deleteId)// Stocker l'ID de l'élément à supprimer
+       });
+
+       // Gérer l'événement de clic sur le bouton de confirmation
+       $('#confirmDeleteBtn').on('click', function() {
+           // Vous pouvez ici effectuer une requête AJAX pour supprimer l'élément
+           $.ajax({
+               url: '{{ route("sous_categories.destroy", "") }}/' + deleteId,
+               type: 'get',
+               success: function(response) {
+                   // Traiter la réponse ou rediriger si nécessaire
+                   window.location.reload(); // Par exemple, rechargez la page après la suppression
+               },
+               error: function(error) {
+                   // Gérer les erreurs de la requête AJAX
+                   console.error(error);
+               }
+           });
+
+           // Fermer la boîte de dialogue modale après la suppression
+           $('#confirmDeleteModal').modal('hide');
+       });
+
+
+   });
+</script>
 
 @endsection

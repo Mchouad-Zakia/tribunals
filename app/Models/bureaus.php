@@ -13,4 +13,7 @@ class bureaus extends Model
         "nom",
         "typeB",
     ];
+    public function user(){
+        return $this->belongsTo(utilisateurs::class,'utilisateurs_id');
+    }
 }

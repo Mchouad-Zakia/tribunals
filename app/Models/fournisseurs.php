@@ -14,4 +14,8 @@ class fournisseurs extends Model
         "email_contact",
         "telephone_contact",
     ];
+    public function achat()
+    {
+        return $this->hasMany(achats::class, 'fournisseurs_id');
+    }
 }

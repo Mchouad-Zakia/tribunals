@@ -1,0 +1,117 @@
+#form-group input {
+    outline: none;
+
+    border: none;
+    width: 90%;
+    position: relative;
+    border-bottom: 1px solid #e9e9e9;
+    font-size: 14px;
+    font-family: inherit;
+}
+.input--style-2 {
+        color: #666;
+        padding-bottom:8px;
+        margin-top: 2px;
+        margin-left: 20px;
+        padding-left: 0px;
+        font-size: 16px;
+        font-weight: 500;
+}
+
+
+.btn--radius {
+    line-height: 40px;
+    display: inline-block;
+    padding: 0 25px;
+    cursor: pointer;
+    color: #fff;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 20%;
+    margin-top: 10px;
+    width: 500px;
+   -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 6px;
+}
+.card {
+    overflow: hidden;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #fff;
+}
+   .card-2 {
+    -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    -webkit-border-radius: 10px;
+    -moz-bordewr-radius: 10px;
+    border-radius: 10px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 9%;
+
+
+   }
+
+@media (max-width: 767px) {
+    .card-2 {
+        display: block;
+    }
+
+
+    .card-2 .card-body {
+        display: block;
+        padding: 60px 50px;
+    }
+}
+.textarea {
+    outline: none;
+
+    width: 63%;
+
+  margin-top:-2%;
+  margin-left:14%;
+    position: relative;
+    border: 1px solid #a9a5a5d6;
+    font-size: 14px;
+    font-family: inherit;
+   /* Adjust as needed */
+}
+         .input {
+               outline: none;
+
+               border: none;
+               width: 70%;
+               position: relative;
+               border-bottom: 1px solid #a9a5a5d6;
+               font-size: 14px;
+               font-family: inherit;
+           }
+           .input .input--style-3 {
+                   color: #424242c6;
+
+
+                   margin-left: 14%;
+                   padding-left: 0px;
+                   font-size: 16px;
+                   font-weight: 500;
+           }
+
+           .input--style-2:-ms-input-placeholder {
+               /* Microsoft Edge */
+               color: #424141;
+           }
+           .form-select {
+            margin-top: 5px;
+            margin-left:4%;
+            width: 63%;
+            padding: 2px;
+            border: 1px solid #a9a5a5d6;
+        /* Adjust as needed */
+        }

@@ -17,4 +17,8 @@ class souscategories extends Model
     {
         return $this->belongsTo(categories::class, 'categories_id');
     }
+    public function stockes()
+    {
+        return $this->hasMany(stockes::class, 'sous_categories_id');
+    }
 }

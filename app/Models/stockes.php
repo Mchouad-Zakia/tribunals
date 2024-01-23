@@ -18,4 +18,14 @@ class stockes extends Model
         'garantie',
         'achats_id',
     ];
+    public function sous_categories(){
+        return $this->belongsTo(souscategories::class,'sous_categories_id');
+    }
+    public function achat(){
+        return $this->belongsTo(achats::class,'achats_id');
+    }
+    public function produit()
+    {
+        return $this->hasMany(produits::class, 'stockes_id');
+    }
 }

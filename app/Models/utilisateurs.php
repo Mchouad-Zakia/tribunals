@@ -11,5 +11,12 @@ class utilisateurs extends Model
     protected $fillable=[
         'email',
         'password',
+        'nom',
+        'prenom',
+        'superadmin',
     ];
+    public function bureaux()
+    {
+        return $this->hasMany(bureaus::class, 'utilisateurs_id');
+    }
 }

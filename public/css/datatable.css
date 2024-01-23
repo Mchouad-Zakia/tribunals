@@ -1,0 +1,216 @@
+#dataTable thead th {
+    background-color:  #044235;
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:bold;
+    font-size:large;
+    text-transform: capitalize;
+}
+h2{
+   color: #044235;
+}
+
+#dataTable tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.dataTables_length {
+    padding: 15px;
+
+    margin-bottom: 17px;
+
+}
+
+.dataTables_length label {
+    font-family: 'Times New Roman', Times, serif;
+    color: #044235;
+}
+
+
+#dataTable tbody .btn {
+    margin: 2px;
+}
+
+.auto-close-alert {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 300px;
+    z-index: 1000;
+}
+#dataTable td, #dataTable th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#dataTable tbody .btn i {
+    line-height: 2;
+}
+#dataTable tbody tr {
+    border-bottom: 2px solid #0f0f0f;
+}
+#dataTable tbody tr:hover {
+    background-color:#9cb4af
+}
+#dataTable tbody tr:last-child {
+    border-bottom: none;
+}
+
+#dataTable tbody tr td {
+    padding: 10px;
+}
+th .sorting{
+    margin-right: 80% !important;
+}
+
+#search{
+    padding: 5px;
+}
+#ajouter{
+    margin-right: 20% ;
+    padding: 5px;
+    color: #044235;
+    border: 1px solid  #044235;
+
+}
+#dataTable_paginate {
+    margin-top: 20px;
+    padding: 10px;
+    color: #044235;
+
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 50px;
+    margin-bottom: 17px;
+    box-shadow: 2px 2px 8px 1px rgba(117, 206, 198, 0.575);
+
+}
+#dataTable_info{
+    padding: 15px;
+    margin-top: 20px;
+
+    font-family: 'Times New Roman', Times, serif;
+    color: #044235;
+    border-radius: 50px;
+    margin-bottom: 17px;
+    box-shadow: 2px 2px 8px 1px rgba(117, 206, 198, 0.575);
+}
+#dataTable_filter{
+    padding: 10px;
+    border-radius: 50px;
+    color: #044235;
+    margin-bottom: 17px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#dataTable_filter input{
+    border: 1px solid  #044235;
+    border-radius: 50px;
+}
+#dataTable_filter input ::after{
+    border: 1px solid  #044235;
+    border-radius: 50px;
+}
+
+/*
+boite modal */
+.modal-confirm {
+    color: #636363;
+    width: 400px;
+    height: 400px;
+}
+
+.modal-confirm .modal-content {
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    font-size: 14px;
+}
+
+.modal-confirm .modal-header {
+    border-bottom: none;
+    position: relative;
+}
+
+.modal-confirm h4 {
+    text-align: center;
+    font-size: 26px;
+    margin: 30px 0 -10px;
+}
+
+.modal-confirm .close {
+    position: absolute;
+    top: -5px;
+    right: -2px;
+}
+
+.modal-confirm .modal-body {
+    color: #999;
+}
+
+.modal-confirm .modal-footer {
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 13px;
+    padding: 10px 46px 25px;
+}
+
+.modal-confirm .modal-footer a {
+    color: #999;
+}
+
+.modal-confirm .icon-box {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    font-size: 60px;
+
+    z-index: 9;
+    text-align: center;
+
+}
+
+.modal-confirm .icon-box i {
+    color: #f15e5e;
+
+    display: inline-block;
+    margin-top: 13px;
+}
+
+.modal-confirm .btn,
+.modal-confirm .btn:active {
+    color: #fff;
+    border-radius: 4px;
+    background: #60c7c1;
+    text-decoration: none;
+    transition: all 0.4s;
+    line-height: normal;
+    min-width: 120px;
+    border: none;
+    min-height: 40px;
+    border-radius: 3px;
+    margin: 0 5px;
+}
+
+.modal-confirm .btn-secondary {
+    background: #c1c1c1;
+}
+
+.modal-confirm .btn-secondary:hover,
+.modal-confirm .btn-secondary:focus {
+    background: #a8a8a8;
+}
+
+.modal-confirm .btn-danger {
+    background: #f15e5e;
+}
+
+.modal-confirm .btn-danger:hover,
+.modal-confirm .btn-danger:focus {
+    background: #ee3535;
+}
+
+.trigger-btn {
+    display: inline-block;
+    margin: 100px auto;
+}

@@ -15,4 +15,12 @@ class achats extends Model
         'date',
         'description',
     ];
+    public function fournisseur()
+    {
+        return $this->belongsTo(fournisseurs::class, 'fournisseurs_id');
+    }
+    public function stock()
+    {
+        return $this->hasMany(stockes::class, 'achats_id');
+    }
 }

@@ -21,6 +21,8 @@ class UtilisateursFactory extends Factory
         return [
             'email'=>fake()->unique()->safeEmail(),
             'password' => Hash::make($password),
+            'nom'=>fake()->lastName(),
+            'prenom'=>fake()->firstName(),
             'created_at' => now(),
         'updated_at' => now(),
 
