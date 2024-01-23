@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+/* Add this CSS to your existing stylesheet or create a new one */
+
+/* Style the table header */
+>>>>>>> 99f818d62520fbd3d42fba63b01dbdf22a177533
 #dataTable thead th {
     background-color:  #044235;
     color: #ffffff;
@@ -10,10 +16,15 @@ h2{
    color: #044235;
 }
 
+<<<<<<< HEAD
+=======
+/* Style alternating rows */
+>>>>>>> 99f818d62520fbd3d42fba63b01dbdf22a177533
 #dataTable tbody tr:nth-child(even) {
     background-color: #f8f9fa;
 }
 
+<<<<<<< HEAD
 .dataTables_length {
     padding: 15px;
 
@@ -27,10 +38,27 @@ h2{
 }
 
 
+=======
+/* Hover effect on rows */
+#dataTable tbody tr:hover {
+    background-color: #a5dfd2;
+}
+
+/* Style the action buttons */
+>>>>>>> 99f818d62520fbd3d42fba63b01dbdf22a177533
 #dataTable tbody .btn {
     margin: 2px;
 }
 
+<<<<<<< HEAD
+=======
+/* Optional: Style the search input */
+#searchInput {
+    width: 200px;
+}
+
+/* Optional: Style the alert box */
+>>>>>>> 99f818d62520fbd3d42fba63b01dbdf22a177533
 .auto-close-alert {
     position: fixed;
     top: 10px;
@@ -38,11 +66,18 @@ h2{
     width: 300px;
     z-index: 1000;
 }
+<<<<<<< HEAD
+=======
+/* Add this CSS to your existing stylesheet or create a new one */
+
+/* Center content in table cells */
+>>>>>>> 99f818d62520fbd3d42fba63b01dbdf22a177533
 #dataTable td, #dataTable th {
     text-align: center;
     vertical-align: middle;
 }
 
+<<<<<<< HEAD
 #dataTable tbody .btn i {
     line-height: 2;
 }
@@ -51,6 +86,17 @@ h2{
 }
 #dataTable tbody tr:hover {
     background-color:#9cb4af
+=======
+/* Optional: Center text in action buttons */
+#dataTable tbody .btn i {
+    line-height: 2;
+}
+/* Add this CSS to your existing stylesheet or create a new one */
+
+/* Style the table rows */
+#dataTable tbody tr {
+    border-bottom: 2px solid #0f0f0f; /* Add a bottom border to each row */
+>>>>>>> 99f818d62520fbd3d42fba63b01dbdf22a177533
 }
 #dataTable tbody tr:last-child {
     border-bottom: none;
@@ -62,6 +108,7 @@ h2{
 th .sorting{
     margin-right: 80% !important;
 }
+<<<<<<< HEAD
 
 #search{
     padding: 5px;
@@ -213,4 +260,20 @@ boite modal */
 .trigger-btn {
     display: inline-block;
     margin: 100px auto;
+=======
+#searchInput
+{
+    margin-top: 18px;
+    margin-left: 20px;
+}
+#RECHERCHE{
+    margin-right: 50%;
+
+}
+#search{
+    padding: 8px;
+}
+#ajouter{
+    margin-left: 100% !important;
+>>>>>>> 99f818d62520fbd3d42fba63b01dbdf22a177533
 }
